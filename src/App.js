@@ -1,6 +1,5 @@
 import "./App.css";
 import CardList from "./Components/CardsList";
-import DNDList from "./Components/DNDList";
 
 const cards = [
   {
@@ -35,8 +34,7 @@ const cards = [
 function App() {
   return (
     <div className="App">
-      {/* <CardList cards={cards} /> */}
-      <DNDList />
+      <CardList cards={cards} />
     </div>
   );
 }
