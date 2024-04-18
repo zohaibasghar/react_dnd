@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 2rem;
 }
 
 .App-logo {
@@ -36,3 +37,17 @@
     transform: rotate(360deg);
   }
 }
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 0 0 calc(33.33% - 10px);
+  margin-bottom: 20px; /* Adjust as needed */
+  border: 1px solid black;
+  cursor: grab;
+  background-color: #d9d9d9;
+}
+
