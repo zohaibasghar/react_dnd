@@ -1,40 +1,46 @@
 import "./App.css";
 import CardList from "./Components/CardsList";
+import FramerList from "./Components/FramerList";
 
 const cards = [
   {
-    title: "me",
+    title: "stp1",
     description: "lorem ipsum",
   },
   {
-    title: "lun",
+    title: "stp2",
     description: "lorem ipsum",
   },
   {
-    title: "ki",
+    title: "stp3",
     description: "lorem ipsum",
   },
   {
-    title: "maa",
+    title: "stp4",
     description: "lorem ipsum",
   },
   {
-    title: "sami",
+    title: "stp5",
     description: "lorem ipsum",
   },
   {
-    title: "ki",
+    title: "stp6",
     description: "lorem ipsum",
   },
   {
-    title: "chut",
+    title: "stp7",
     description: "lorem ipsum",
   },
 ];
 function App() {
   return (
     <div className="App">
+      <h2>Custom component</h2>
+      <code style={{ paddingBottom: "20px" }}>Support every direction</code>
       <CardList cards={cards} />
+      <h2>Framer Motion</h2>
+      <code>Most libraries dont support both x and y axises</code>
+      <FramerList cards={cards} />
     </div>
   );
 }
